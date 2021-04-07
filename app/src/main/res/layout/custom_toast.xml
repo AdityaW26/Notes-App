@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_toast">
+
+    <ImageView
+        android:id="@+id/imagename"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_name"
+
+        />
+
+    <View
+        android:id="@+id/viewDifferentiator"
+        android:layout_width="5dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/imagename"
+        android:layout_centerVertical="true"
+        android:background="@drawable/background_subtitle_indicator" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/viewDifferentiator"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:text="@string/developed_by_aditya_wanjale"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        tools:ignore="TextViewEdits" />
+
+
+</RelativeLayout>
