@@ -79,10 +79,6 @@ public class CreateNoteActivity extends AppCompatActivity {
         textWebURL = findViewById(R.id.textWebURL);
         layoutWebURL = findViewById(R.id.layoutWebURL);
 
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null;
-        actionBar.hide();
-
 
         textdateTime.setText(
                 new SimpleDateFormat("EEEE, dd MMMM yyyy, HH:mm:a", Locale.getDefault()).format(new Date())
